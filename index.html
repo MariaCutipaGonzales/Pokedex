@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pokedex</title>
+	<link rel="shurt icon" type="text/css" href="icon/favicon.ico">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<div id="root"></div>
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor/materialize.min.js"></script>
+	<script src="js/utils/get-pokeapi.js"></script>
+	<script src="js/utils/filter.js"></script>
+	<script src="js/components/header.js"></script>
+	<script src="js/components/pokedex.js"></script>
+	<script src="js/index.js"></script>
+    <script>
+    $('#root').html("<img id='load' src='https://media.giphy.com/media/RaGnv1Dx2aseY/giphy.gif'/>");
+    </script>
+	<!--<script>
+        code that transform .... 
+		$(document).on('ready',load);
+		console.log(data.pokemon_entries);
+		function load(data) {
+			var caja ="";
+			$.each(data.pokemon_entries, (i,item) => {
+				caja +="<img src='http://serebii.net/art/th/"+item.entry_number+".png'>";
+				console.log(item[i].name);
+			});
+		$("#imagenes").html(caja);		
+		}
+	</script>-->
+</body>
+</html>
